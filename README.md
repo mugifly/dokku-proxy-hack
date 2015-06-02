@@ -14,11 +14,11 @@ This steps tested in Ubuntu 14.04 LTS & dokku-alt v0.3.10-7-gf34bb41.
 
 Please edit the following files.
 
-**/etc/apt.conf**
+**/etc/apt/apt.conf**
 
 ```txt
-export http_proxy="http://proxy.example.com:8080/"
-export https_proxy="http://proxy.example.com:8080/"
+Acquire::http::proxy "http://proxy.example.com:8080/";
+Acquire::https::proxy "http://proxy.example.com:8080/";
 ```
 
 ### 1. Installing of dokku-alt
